@@ -7,7 +7,7 @@ import com.example.mode5.Utils.INetCallBack;
 import com.example.mode5.Utils.RetrofitUtils;
 
 public class MainModelImpl implements Contract.Mode {
-    private Contract.Presenter presenter;
+     Contract.Presenter presenter;
 
     public MainModelImpl(Contract.Presenter presenter) {
         this.presenter = presenter;
