@@ -1,4 +1,20 @@
 package com.example.mode5.Mode;
 
-public class MainModelImpl {
+import android.content.Context;
+
+import com.example.mode5.Contract.Contract;
+import com.example.mode5.Utils.INetCallBack;
+import com.example.mode5.Utils.RetrofitUtils;
+
+public class MainModelImpl implements Contract.Mode {
+    private Contract.Presenter presenter;
+
+    public MainModelImpl(Contract.Presenter presenter) {
+        this.presenter = presenter;
+    }
+
+    @Override
+    public <I> void mode(String url, INetCallBack<I> callBack) {
+        RetrofitUtils.getRetrofitUtils().get(url,callBack);
+    }
 }

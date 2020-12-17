@@ -1,4 +1,4 @@
-package com.example.mode5.FooBean;
+package com.example.mode5.Bean;
 
 import java.util.List;
 
